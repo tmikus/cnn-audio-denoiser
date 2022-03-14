@@ -130,7 +130,7 @@ class Dataset:
 
         for i in range(0, len(self.clean_filenames), subset_size):
 
-            tfrecord_filename = './records/' + prefix + '_' + str(counter) + '.tfrecords'
+            tfrecord_filename = '.\\records\\' + prefix + '_' + str(counter) + '.tfrecords'
 
             if os.path.isfile(tfrecord_filename):
                 print(f"Skipping {tfrecord_filename}")

@@ -1,0 +1,1 @@
+parallel -j 16 'ffmpeg -hide_banner -loglevel error -i "{}" -acodec pcm_s16le -ar 48000 "../clips_wav/{.}.wav"' ::: $(find -type f -name '*.mp3')
